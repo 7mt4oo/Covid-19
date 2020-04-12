@@ -95,7 +95,7 @@ public class PostData extends AppCompatActivity {
                     locationAddress.getAddressFromLocation(latitude, longitude,
                             getApplicationContext(), new GeocoderHandler());
                 } else {
-                    Toast.makeText(PostData.this, "Open GPS", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PostData.this, "Open GPS and Location", Toast.LENGTH_SHORT).show();
 
 //                    showSettingsAlert();
                 }
