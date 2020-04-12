@@ -32,7 +32,7 @@ public class LocationAddress {
                             sb.append(address.getAddressLine(i)).append("\n");
                         }
                         sb.append(address.getLocality()).append("\n");
-                        sb.append(address.getPostalCode()).append("\n");
+//                        sb.append(address.getPostalCode()).append("\n");
                         sb.append(address.getCountryName());
                         result = sb.toString();
                     }
@@ -44,7 +44,7 @@ public class LocationAddress {
                     if (result != null) {
                         message.what = 1;
                         Bundle bundle = new Bundle();
-                        result = "Latitude: " + latitude + " Longitude: " + longitude +
+                        result = "Latitude: " + latitude + "\nLongitude: " + longitude +
                                 "\n\nAddress:\n" + result;
                         bundle.putString("address", result);
                         message.setData(bundle);

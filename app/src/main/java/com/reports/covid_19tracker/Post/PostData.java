@@ -95,7 +95,7 @@ public class PostData extends AppCompatActivity {
                     locationAddress.getAddressFromLocation(latitude, longitude,
                             getApplicationContext(), new GeocoderHandler());
                 } else {
-                    Toast.makeText(PostData.this, "Open Gps", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PostData.this, "Open GPS", Toast.LENGTH_SHORT).show();
 
 //                    showSettingsAlert();
                 }
@@ -299,7 +299,7 @@ public class PostData extends AppCompatActivity {
                 default:
                     locationAddress = null;
             }
-            tvCountry.setText(locationAddress + "\nI want to report a case of corona in this address");
+            tvCountry.setText( "I want to report a case of corona in this address: \n" + locationAddress);
 
         }
     }
