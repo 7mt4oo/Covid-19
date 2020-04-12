@@ -1,0 +1,191 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <Button-->
+<!--        android:id="@+id/imageButton"-->
+<!--        android:layout_width="114dp"-->
+<!--        android:layout_height="68dp"-->
+<!--        android:layout_marginTop="39dp"-->
+<!--        android:layout_marginBottom="17dp"-->
+<!--        android:background="@drawable/ic_location_foreground"-->
+<!--        android:onClick="gotoadd"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/view"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/input_Classroom"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="399dp"
+        android:layout_height="99dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="70dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/email_title"
+        android:layout_width="54dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="317dp"
+        android:layout_marginBottom="18dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/name"
+        android:textColor="#008DC9"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/input_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="349dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        android:paddingTop="2pt"
+        android:inputType="textMultiLine"
+        android:paddingBottom="2pt"
+        android:background="@drawable/circlew"
+        android:selectAllOnFocus="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/input_Classroom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="317dp"
+        android:layout_marginBottom="18dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/repo"
+        android:textColor="#008DC9"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/input_Classroom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_name"
+        app:layout_constraintVertical_bias="0.4"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+
+        android:id="@+id/input_Classroom"
+        android:layout_width="343dp"
+        android:layout_height="285dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/circlew"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:paddingTop="10pt"
+        android:padding="10dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintBottom_toTopOf="@+id/btn_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_name"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="156dp"
+        android:layout_height="41dp"
+        android:background="@drawable/circlew"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#008DC9"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wssend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Classroom" />
+
+
+    <Button
+        android:id="@+id/btnShowAddress"
+        android:layout_width="156dp"
+        android:layout_height="41dp"
+        android:background="@drawable/circlew"
+        android:text="Get My Address"
+        android:textAllCaps="false"
+        android:onClick="gotoadd"
+        android:textColor="#008DC9"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wssend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Classroom" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="250dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/wssend"
+        android:layout_width="334dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/circlew"
+        android:text="Send Via WhatsApp"
+        android:textAllCaps="false"
+        android:textColor="#008DC9"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fbsend"
+        android:layout_width="334dp"
+        android:layout_height="38dp"
+        android:background="@drawable/circlew"
+        android:text="Send Via Facebook"
+        android:textAllCaps="false"
+        android:textColor="#008DC9"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wssend" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name" translatable="false">SPCRC</string>
+    <string name="title_home">Egypt</string>
+    <string name="title_world">World</string>
+    <string name="title_contact">Contact me</string>
+
+    <!-- home fragment-->
+    <string name="hot_line">Hot Line</string>
+    <string name="_15335" translatable="false">15335</string>
+    <string name="_105" translatable="false">105</string>
+    <string name="today_confirmed_cases">Today Confirmed Cases</string>
+    <string name="total_confirmed_cases">Total Confirmed Cases</string>
+    <string name="total_deaths">Total Deaths</string>
+    <string name="today_deaths">Today Deaths</string>
+    <string name="total_recovered">Recovered</string>
+    <string name="_0" translatable="false">0</string>
+
+    <!-- world fragment-->
+    <string name="confirmed">Confirmed:" "</string>
+    <string name="deaths">Deaths:" "</string>
+    <string name="recovered">Recovered:" "</string>
+
+    <!-- contact fragment-->
+    <string name="email" translatable="false">virus.corona.reports@gmail.com</string>
+    <string name="note">NOTE</string>
+    <string name="updating_time">Data is being updated by World Health Organization (WHO).
+                                 Egypt data is updated almost at 10 PM.</string>
+    <string name="search">Search</string>
+    <string name="name" translatable="false">Name:</string>
+    <string name="repo" translatable="false">Message:</string>
+
+
+</resources>

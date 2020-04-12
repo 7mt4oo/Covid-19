@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="70dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="339dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp">
+
+                <ImageView
+                    android:id="@+id/gmail_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="32dp"
+                    android:layoutDirection="ltr"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_mail_outline_black_24dp" />
+
+                <TextView
+                    android:id="@+id/gmail_text"
+                    android:layout_width="262dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    android:text="@string/email"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorWhite"
+                    android:textDirection="ltr"
+                    app:layout_constraintBottom_toBottomOf="@+id/gmail_icon"
+                    app:layout_constraintStart_toEndOf="@id/gmail_icon"
+                    app:layout_constraintTop_toTopOf="@id/gmail_icon" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="?android:attr/listDivider"
+                    android:backgroundTint="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/gmail_text"
+                    app:layout_constraintStart_toStartOf="@+id/gmail_text"
+                    app:layout_constraintTop_toBottomOf="@id/gmail_icon" />
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/linkedin_text"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="?attr/selectableItemBackground"-->
+                <!--                    android:textColor="?android:textColorLink"-->
+                <!--                    android:textDirection="ltr"-->
+                <!--                    android:layoutDirection="ltr"-->
+                <!--                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="@id/linkedin_icon"-->
+                <!--                    app:layout_constraintStart_toStartOf="@id/gmail_text"-->
+                <!--                    app:layout_constraintTop_toTopOf="@id/linkedin_icon" />-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="339dp"
+            android:layout_height="94dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/phone_icon"
+                    android:layout_width="66dp"
+                    android:layout_height="60dp"
+                    android:layoutDirection="ltr"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_call_foreground" />
+
+                <TextView
+                    android:id="@+id/btn_call"
+                    android:layout_width="227dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:layoutDirection="ltr"
+                    android:onClick="btnCall"
+                    android:text="01096430213"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorWhite"
+                    android:textDirection="ltr"
+                    app:layout_constraintBottom_toTopOf="@+id/phone_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.835"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.206" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    android:backgroundTint="@android:color/white" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
