@@ -2,6 +2,7 @@ package com.reports.covid_19tracker;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,7 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         ActionBar actionBar = getSupportActionBar();
         if (null != actionBar) {
@@ -22,7 +24,7 @@ public class SplashScreen extends AppCompatActivity {
                 @Override
                 public void run() {
                     try {
-                        sleep(2500);
+                        sleep(3500);
                         Intent intent = new Intent(getApplicationContext(), MainPage.class);
                         startActivity(intent);
                         finish();

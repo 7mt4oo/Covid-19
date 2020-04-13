@@ -70,9 +70,9 @@ public class MainPage extends AppCompatActivity {
         Intent intentMain = new Intent(MainPage.this, HelpActivity.class);
         startActivity(intentMain);
     }
-    public void gotoadd(View view) {
-        Intent intentMain = new Intent(MainPage.this, MyActivity.class);
-        startActivity(intentMain);
-    }
+//    public void gotoadd(View view) {
+//        Intent intentMain = new Intent(MainPage.this, MyActivity.class);
+//        startActivity(intentMain);
+//    }
 }
 

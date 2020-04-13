@@ -47,9 +47,8 @@
 
                 <TextView
                     android:id="@+id/gmail_text"
-                    android:layout_width="262dp"
+                    android:layout_width="273dp"
                     android:layout_height="32dp"
-                    android:layout_marginStart="16dp"
                     android:background="?attr/selectableItemBackground"
                     android:layoutDirection="ltr"
                     android:text="@string/email"
@@ -141,8 +140,13 @@
                     android:id="@+id/divider2"
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
+                    android:layout_marginTop="56dp"
                     android:background="?android:attr/listDivider"
-                    android:backgroundTint="@android:color/white" />
+                    android:backgroundTint="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

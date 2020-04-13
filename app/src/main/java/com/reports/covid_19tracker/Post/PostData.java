@@ -299,7 +299,8 @@ public class PostData extends AppCompatActivity {
                 default:
                     locationAddress = null;
             }
-            tvCountry.setText( "I want to report a case of corona in this address: \n" + locationAddress);
+            tvCountry.setText(tvCountry.getText()+locationAddress);
+//            "I want to report a case of corona in this address: \n"
 
         }
     }

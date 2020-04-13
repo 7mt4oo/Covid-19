@@ -80,28 +80,28 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="370dp"
-        android:layout_height="267dp"
+        android:layout_width="414dp"
+        android:layout_height="304dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.122"
-        app:srcCompat="@drawable/mansoura" />
+        app:srcCompat="@drawable/home" />
 
-    <Button
-        android:id="@+id/imageButton"
-        android:layout_width="114dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/ic_location_foreground"
-        android:onClick="gotoadd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewUser" />
+<!--    <Button-->
+<!--        android:id="@+id/imageButton"-->
+<!--        android:layout_width="114dp"-->
+<!--        android:layout_height="68dp"-->
+<!--        android:layout_marginTop="48dp"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:background="@drawable/ic_location_foreground"-->
+<!--        android:onClick="gotoadd"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/viewUser"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
 
     <!--    <TextView-->
 <!--        android:id="@+id/textView"-->
