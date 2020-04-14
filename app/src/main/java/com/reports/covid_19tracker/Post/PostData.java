@@ -118,8 +118,8 @@ public class PostData extends AppCompatActivity {
 
                 if (isPackageExisted("com.facebook.orca")) {
                     Uri uri = Uri.parse("fb-messenger://user/");
-                    String text = "YOUR TEXT HERE";
-                    uri = ContentUris.withAppendedId(uri, Long.parseLong("100013683048069"));
+                    String text = message;
+                    uri = ContentUris.withAppendedId(uri, Long.parseLong("103840367964674"));
                     Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                     startActivity(intent);
                 } else {
