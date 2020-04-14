@@ -20,8 +20,8 @@
 
         <Button
             android:id="@+id/insertUser"
-            android:layout_width="334dp"
-            android:layout_height="38dp"
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="@dimen/_25sdp"
             android:layout_gravity="center"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
@@ -36,8 +36,8 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="334dp"
-            android:layout_height="38dp"
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="@dimen/_25sdp"
             android:layout_gravity="center"
             android:layout_marginTop="24dp"
             android:background="@drawable/circle"
@@ -54,8 +54,8 @@
 
         <Button
             android:id="@+id/help"
-            android:layout_width="334dp"
-            android:layout_height="38dp"
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="@dimen/_25sdp"
             android:layout_gravity="center"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
@@ -74,10 +74,10 @@
 
         <Button
             android:id="@+id/viewUser"
-            android:layout_width="334dp"
-            android:layout_height="38dp"
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="@dimen/_25sdp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/_9sdp"
             android:layout_marginBottom="180dp"
             android:background="@drawable/circle"
             android:onClick="buex"
@@ -92,8 +92,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="422dp"
-        android:layout_height="284dp"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_235sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
