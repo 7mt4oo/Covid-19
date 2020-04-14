@@ -14,7 +14,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.reports.covid_19tracker.AppLocationService;
+import com.reports.covid_19tracker.map.AppLocationService;
+import com.reports.covid_19tracker.map.LocationAddress;
 
 public class MyActivity extends Activity {
 

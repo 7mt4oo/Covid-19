@@ -1,4 +1,4 @@
-package com.reports.covid_19tracker;
+package com.reports.covid_19tracker.map;
 
 import android.content.Context;
 import android.location.Address;
