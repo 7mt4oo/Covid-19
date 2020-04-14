@@ -53,7 +53,7 @@ public class LocationAddress {
                         message.what = 1;
                         Bundle bundle = new Bundle();
                         result = "Latitude: " + latitude + " Longitude: " + longitude +
-                                "\n Unable to get address for this lat-long.";
+                                "\n No Internet Connection.";
                         bundle.putString("address", result);
                         message.setData(bundle);
                     }
