@@ -58,7 +58,6 @@
         android:layout_marginEnd="15dp"
         android:padding="10dp"
         android:paddingTop="2pt"
-        android:inputType="textMultiLine"
         android:paddingBottom="2pt"
         android:background="@drawable/circlew"
         android:selectAllOnFocus="false"
