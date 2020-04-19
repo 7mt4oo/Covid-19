@@ -4,11 +4,9 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -89,6 +87,7 @@ public class MainPage extends AppCompatActivity {
 //        Intent intentMain = new Intent(MainPage.this, MyActivity.class);
 //        startActivity(intentMain);
 //    }
+
 
     @Override
     public void onBackPressed() {
