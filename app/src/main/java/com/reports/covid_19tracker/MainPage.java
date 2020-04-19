@@ -52,7 +52,6 @@ public class MainPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 finish();
 
             }
@@ -85,6 +84,7 @@ public class MainPage extends AppCompatActivity {
         Intent intentMain = new Intent(MainPage.this, HelpActivity.class);
         startActivity(intentMain);
     }
+
 //    public void gotoadd(View view) {
 //        Intent intentMain = new Intent(MainPage.this, MyActivity.class);
 //        startActivity(intentMain);
