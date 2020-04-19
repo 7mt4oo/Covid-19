@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">SPCRC</string>
+    <string name="app_name" translatable="false">SPCRS</string>
     <string name="title_home">Egypt</string>
     <string name="title_world">World</string>
     <string name="title_contact">Contact me</string>

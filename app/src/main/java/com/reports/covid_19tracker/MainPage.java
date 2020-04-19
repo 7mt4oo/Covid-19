@@ -27,16 +27,16 @@ public class MainPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
         if (ContextCompat.checkSelfPermission(MainPage.this,
-                Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+                Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(MainPage.this,
-                    Manifest.permission.ACCESS_FINE_LOCATION)){
+                    Manifest.permission.ACCESS_FINE_LOCATION)) {
                 ActivityCompat.requestPermissions(MainPage.this,
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-            }else{
+            } else {
                 ActivityCompat.requestPermissions(MainPage.this,
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
             }
-    }
+        }
 //
 //        ActionBar actionBar = getSupportActionBar();
 //        if (null != actionBar) {
@@ -76,7 +76,7 @@ public class MainPage extends AppCompatActivity {
 
     public void scClick(View view) {
 
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Coronalive.class);
         startActivity(intent);
     }
 
@@ -89,5 +89,14 @@ public class MainPage extends AppCompatActivity {
 //        Intent intentMain = new Intent(MainPage.this, MyActivity.class);
 //        startActivity(intentMain);
 //    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        }
 }
+
 
