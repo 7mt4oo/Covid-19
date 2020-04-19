@@ -67,7 +67,7 @@ public class PostData extends AppCompatActivity implements GoogleApiClient.Conne
     private static final int REQUEST_CODE = 1;
     private ProgressDialog progress;
     TextView textView;
-    String phoneNumberWithCountryCode = "+201096430213";
+    String phoneNumberWithCountryCode = "+201552356263";
     String message = "عايز ابلغ عن حالة مصابه بكرونا";
     TextView tvName;
     TextView tvCountry;
@@ -140,7 +140,7 @@ public class PostData extends AppCompatActivity implements GoogleApiClient.Conne
                 if (isPackageExisted("com.facebook.orca")) {
                     Uri uri = Uri.parse("fb-messenger://user/");
                     String text = message;
-                    uri = ContentUris.withAppendedId(uri, Long.parseLong("103840367964674"));
+                    uri = ContentUris.withAppendedId(uri, Long.parseLong("105117117843733"));
                     Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                     startActivity(intent);
                 } else {
